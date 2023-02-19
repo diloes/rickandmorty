@@ -1,0 +1,19 @@
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 23%;
+  margin: 0 auto;
+  background-color: #363535;
+  border-bottom: 1px solid black;
+}
+
+.row:first-of-type {
+  border-top-left-radius: 21px;
+  border-top-right-radius: 21px;
+}
+
+.row:last-of-type {
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 21px;
+}

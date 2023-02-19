@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 10px;
+}
+
+.personaje img{
+  border-radius: 10px;
+}
+
+.personaje img:hover {
+  cursor: pointer;
+  -webkit-box-shadow: -3px 1px 20px 18px #1DFF25; 
+  box-shadow: -3px 1px 20px 18px #1DFF25;
+}
+
+.episodes {
+  display: flex;
+  flex-direction: column;
+}
