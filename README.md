@@ -1,4 +1,4 @@
-## Rick y Morty
+## Rick y Morty
 
 La webapp consiste en consumir la API de rick y morty. 
 
