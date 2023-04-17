@@ -31,18 +31,33 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #646cff;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
   border-color: #646cff;
   background-color: #1a1a1a;
+  color: #fff;
+}
+button:hover {
+  border-color: #1a1a1a;
+  background-color: #747bff;
+  color: #242424;
+}
+
+.search-filter {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-filter input {
+  font-size: 1.2rem;
+  padding: 0.4rem;
 }
 
 @media (prefers-color-scheme: light) {
