@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export const Home = ({ personajes, page, setPage, setPersonajes }) => {
@@ -26,7 +26,7 @@ export const Home = ({ personajes, page, setPage, setPersonajes }) => {
   return (
     <div>
       <div className='header'>
-        <button disabled={page === 1 ? 'disabled' : ''} onClick={handlePagePrev}>
+        <button disabled={page === 1 ? true : false} onClick={handlePagePrev}>
           {'<<'}
         </button>
         <h1>Rick & Morty</h1>

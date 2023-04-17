@@ -48,6 +48,10 @@ button:hover {
   color: #242424;
 }
 
+button:disabled {
+  visibility: hidden;
+}
+
 .search-filter {
   display: flex;
   gap: 0.5rem;
