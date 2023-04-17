@@ -3,7 +3,7 @@
   font-size: 16px;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -60,7 +60,7 @@ button:hover {
   padding: 0.4rem;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -71,4 +71,4 @@ button:hover {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
