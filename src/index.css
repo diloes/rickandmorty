@@ -71,6 +71,16 @@ button:disabled {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 480px) {
+  .container__form {
+    flex-direction: column;
+  }
+
+  .search-filter {
+    flex-direction: column;
+  }
+}
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
