@@ -10,16 +10,14 @@ function App() {
   const [personajes, setPersonajes] = useState([])
   const [page, setPage] = useState(1)
 
-  useEffect(() => {
-    const fetchPersonajes = async () => {
-      const response = await fetch(
-        `https://rickandmortyapi.com/api/character?page=${page}`
-      )
-      const { results } = await response.json()
-      setPersonajes(results)
-      return
-    }
+  const fetchPersonajes = async () => {
+    const response = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`)
+    const { results } = await response.json()
+    setPersonajes(results)
+    return
+  }
 
+  useEffect(() => {
     fetchPersonajes()
   }, [page])
 
@@ -34,6 +32,7 @@ function App() {
               page={page}
               setPage={setPage}
               setPersonajes={setPersonajes}
+              fetchPersonajes={fetchPersonajes}
             />
           }
         />
