@@ -26,6 +26,7 @@ export const Home = ({ personajes, page, setPage, setPersonajes, fetchPersonajes
 
   function handleReset() {
     setName('')
+    setPage(1)
     fetchPersonajes()
   }
 
@@ -48,16 +49,22 @@ export const Home = ({ personajes, page, setPage, setPersonajes, fetchPersonajes
       </div>
 
       <div className='container'>
-        {personajes.map((personaje) => (
-          <div key={personaje.id}>
-            <Link to={`/${personaje.id}`}>
-              <div className='personaje'>
-                <img src={personaje.image} alt={personaje.name} />
-                <h2>{personaje.name}</h2>
-              </div>
-            </Link>
-          </div>
-        ))}
+        {personajes ? (
+          personajes?.map((personaje) => (
+            <div key={personaje.id}>
+              <Link to={`/${personaje.id}`}>
+                <div className='personaje'>
+                  <img src={personaje.image} alt={personaje.name} />
+                  <h2>{personaje.name}</h2>
+                </div>
+              </Link>
+            </div>
+          ))
+        ) : (
+          <p style={{ fontSize: '2rem', backgroundColor: 'red', color: 'white', width: '100%' }}>
+            Personaje no encontrado
+          </p>
+        )}
       </div>
     </div>
   )
